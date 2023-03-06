@@ -1,0 +1,671 @@
+
+body{
+    background-color: #06102B;
+    color: #FFFFFF;
+    width: 100%;
+}
+/*font style*/
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+H1{
+    font-family: 'Noto Sans CJK TC';
+    font-weight: 700;
+    line-height: 72px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+}
+H2{
+    font-family: 'Noto Sans CJK TC';
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #9DA4FF;
+    text-shadow: 0px 0px 10px rgba(157, 164, 255, 0.6);
+}
+H3{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    font-family: 'Noto Sans CJK TC';
+    font-weight: Bold;
+    display: inline;/*H字體標籤後不換行*/
+}
+H4{
+    font-family: 'Noto Sans CJK TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    display: inline;/*H字體標籤後不換行*/
+
+}
+H5{
+    font-family: 'Noto Sans CJK TC';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.banner{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row1{
+    flex-direction: row;
+}
+.title{
+font-family: 'Noto Sans CJK TC';
+font-weight: 700;
+font-size: 28px;
+line-height: 41px;
+letter-spacing: 0.8em;
+text-transform: uppercase;
+}
+.section1{
+    width: 100%;
+    overflow: hidden;
+}
+/* JOINUS跑馬燈 */
+.loop {
+    display: inline-block;
+    font-size: 48px;
+    font-weight:400px;
+    white-space: nowrap;
+    height: 100%;
+    Letter spacing: 8%;
+    background: -webkit-linear-gradient(bottom,#9FA6FF 0, #55FFAD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px transparent;
+    color: #06102B;
+}
+.section2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.section3 {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-image: url("img/sec3_banner.svg");
+}
+.purplecircle{
+    padding-left: 949px;
+    padding-top: 90px;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+}
+.yellowcircle{
+    padding-right:1000px;
+    padding-top:507px;
+    width: 205px;
+    height: 205px;
+    position: absolute;
+}
+.title{
+    flex-direction: row;   
+    padding: 92px;
+}
+.loop2{
+    width: 140%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 14px 20px 10px;
+    gap: 40px;
+    background: linear-gradient(90deg, #9DA4FF 0%, #55FFAD 100%);
+    color: #FFFFFF;
+    height: 43px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.loop3{
+    width: 140%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 14px 20px 10px;
+    gap: 40px;
+    background: linear-gradient(90deg, #9DA4FF 0%, #55FFAD 100%);
+    color: #FFFFFF;
+    height: 43px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.stage{/*啉頁卡片的座標排版*/
+    flex-wrap: wrap;
+    display:flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap:40px;
+    padding-bottom:100px;
+}
+.sec4_text{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: Bold;
+    color:#55FFAD;
+    text-shadow: 0px 0px 10px rgba(85, 255, 173, 0.6);
+    width: 659px;
+    height: 108px;
+    border-color: #55FFAD;
+    border-style: solid;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px rgba(85, 255, 173, 0.6);
+    padding:16px, 36px, 20px, 36px;
+}
+.cardCont
+    {
+    /*卡片雙面*/
+    width: 300px;
+    height: 360px;
+    border-radius: 32px;
+    padding: 16px 0px 16px 0px;
+    }
+    .cardFront, .cardBack
+    {border-radius: 32px;
+    /*卡片正面*/
+    position:absolute;
+    width: 300px;
+    height: 360px;
+    background: -webkit-linear-gradient(bottom,#9DA4FF 0, #6E77E9 100%);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    }
+.cardBack
+    /*卡片背面字體*/
+    {
+    border-radius: 32px;
+    color: #6E77E9;
+    /*卡片背面*/
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 0px;
+    width: 300px;
+    height: 360px;
+    background: #FFFFFF;
+    border-radius: 32px;
+}
+    
+.card1{
+    /*板塊設計背景*/
+    margin-top:16px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 8px;
+    gap: 10px;
+    background: #83FAC1;
+    border-radius: 8px;
+    /*#板塊設計*/
+    font-family: 'Noto Sans CJK TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #06102B;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    }
+.card2{
+    padding-top:20px;
+    justify-content:center;
+    font-family: 'Noto Sans CJK TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #6E77E9;
+    align-self: stretch;
+    }
+    
+.card3{
+    padding-top:8px;
+    font-family: 'Noto Sans CJK TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #6E77E9;
+    }
+.card4{
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #C4C8FF;
+    }
+.card5{
+    font-family: 'Noto Sans CJK TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #6E77E9;
+    }
+.card6{
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    padding-top:50px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
+
+.section4{
+    background-color: #0E1835;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.instruction{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.instruction :hover {
+    background-color:rgba(110, 119, 233, 0.1);
+    border: rgba(157, 164, 255, 1);
+    box-shadow: 0px 0px 10px 0px rgba(157, 164, 255, 0.6);
+}
+
+.intro{
+    width:520px;
+    height:300px;
+    border: 3px solid #FFFFFF;
+    border-radius: 32px;
+    padding: 40px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro H3:hover{
+    color:#9DA4FF;
+    text-shadow: 0px 0px 10px 0px 55rgba(157, 164, 2, 0.6);
+    
+}
+/*.triangle{
+    border-style: solid;
+    border-width: 0 20px 20px 20px;
+    border-color: transparent transparent #9DA4FF transparent;
+}*/
+
+.section5{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.sec5_text1{
+    display:inline;
+    color:white;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+}
+.sec5_text2{
+    display:inline;
+    color:white;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+}
+/*得獎卡片*/
+.line{
+    width: 856px;
+    height: 3px;
+    background: #FFFFFF;    
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+}
+.flag{
+    padding-left: 300px;
+}
+.car{
+    padding-left:50px;
+}
+.reward{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.box {
+    padding: 40px;
+    background: #151F3F;;
+    border: 2px solid transparent;
+	border-image: linear-gradient(to bottom right, #313A65 0%, #313A65 100%);
+    clip-path: inset(0 round 35px);
+	border-image-slice: 1;
+    border-radius: 32px;
+    width: 485px;
+    height: 800px;
+    margin: 60px;
+}
+.reward :hover{
+    border: 2px solid transparent;
+    transform:  translateY(-20px);
+    transition-duration:400ms;
+    border-image: linear-gradient(150deg, #9DA4FF 0%, #55FFAD 100%);
+}
+/*Q&A部分*/       
+.question{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}        
+/*QA表格*/
+.tab {
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: #858993;
+}
+
+/* Change background color of buttons on hover碰到的時候的樣式 */
+.tab button:hover {
+    color: white;
+    -webkit-filter: drop-shadow(5px 5px 8px #000); 
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+    border-bottom:4px #55FFAD solid; padding-bottom:4px; 
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+}
+.tabcontent {
+    border-radius: 32px;
+    background-color: #FFFFFF;
+    padding: 80px;
+    width: 60%;
+}
+.tabcontent H3{
+    color: #6E77E9;
+    letter-spacing: 0.1em;
+}
+.tabcontent H4{
+    color:  #06102B;
+}
+.tabcontent H5{
+    color: #06102B;
+}
+.cta {
+    margin:60px;
+    border: none;
+    color: #000000;
+    padding: 20px, 24px, 20px, 24px;
+    gap:10px;
+    font-weight:bold;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family:Noto Sans CJK TC;
+    width:240px;
+    height: 76px;
+    border-radius:50px;
+    background-color:#FFE34E;
+}
+.cta:hover {
+	font-family:Noto Sans CJK TC;
+    padding: 20px 24px;
+    gap: 10px;
+    background-color:#FFF385;
+    box-shadow: 0px 0px 10px rgba(255, 243, 133, 0.6);
+}
+/*贊助商*/
+.section7{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background: #151F3F;
+    padding-bottom:80px;
+}
+.sparkle1{
+    width: 29px;
+    height: 29px;
+    padding-top: 112px;
+    padding-right:12px;
+}
+.sparkle2{
+    width: 17px;
+    height: 17px;
+    padding-left:12px;
+}
+.sponsorlogo{
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+    gap: 10px;
+    width: 140px;
+    height: 140px;
+    border-radius: 32px;
+}
+.sponsorlogo:hover{
+    background: linear-gradient(90deg, #9DA4FF 0%, #55FFAD 100%);
+    }
+.footer{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 32px 0px;
+}
+
+
+
+
+/* Basic styling */
+nav {
+    font-size: 16px;
+    padding: 0 16px;
+}
+a {
+    color:#858993;
+    text-decoration: none;
+}
+.logo{
+    padding: 16px 0;
+}
+.item.button {
+    border-radius:40px;
+    border: 1px solid #FFFFFF;
+    width:80px;
+    height:42px;
+    
+}
+.item.button a:hover{
+    background: rgba(85, 255, 173, 0.2);
+    color: #55FFAD;
+    border: 1px solid #55FFAD;
+    box-shadow: 0px 0px 10px rgba(85, 255, 173, 0.6);
+}
+.item:not(.button) a:hover,
+.item a:hover::after {
+    color: #FFFFFF;
+    -webkit-filter: drop-shadow(5px 5px 8px #000); 
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+    border-bottom:4px #55FFAD solid; padding-bottom:8px; 
+}
+/* Mobile menu */
+.menu {
+    list-style:none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li a {
+    display: block;
+    padding: 16px;
+}
+.toggle {
+    order: 1;
+    font-size: 20px;
+}
+
+.item {
+    order: 2;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.item.button {
+    order: 3;
+    width: 100%;
+}
+.active .item {
+    display: block;
+}
+
+/* Submenu up from mobile screens */
+/* Tablet menu */
+@media all and (min-width: 700px) {
+.menu {
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    flex: 1;
+}
+.item.button {
+    width: auto;
+    order: 2;
+    display: block;
+}
+.toggle {
+    flex: 1;
+    text-align: right;
+    order: 1;
+}
+  /* Button up from tablet screen */
+.menu li.button a {
+    padding: 10px 15px;
+    margin: 5px 0;
+}
+
+.button.secondary {
+    border: 0;
+}
+.button.secondary a {
+    border-radius:40px;
+    border: 1px solid #FFFFFF;
+    width:80px;
+    height:42px;
+}
+.button:not(.secondary) a:hover {
+    color: #FFFFFF;
+    -webkit-filter: drop-shadow(5px 5px 8px #000); 
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+    border-bottom:4px #55FFAD solid; padding-bottom:8px; 
+}
+}
+/* Desktop menu */
+@media all and (min-width: 960px) {
+.menu {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background: none;
+}
+.logo {
+    order: 0;
+}
+.item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+}
+.button {
+    order: 2;
+}
+
+.toggle {
+    display: none;
+}
+
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+}
+.img01{
+    width: 150px;
+    height: 150px;
+}
+.img02{
+    width: 250px;
+    height: 250px;
+    padding-top:72px;
+}
+.middle{
+    flex-direction: column;
+}
+.line1{
+    width:241.95px;
+    height:195.71px;
+}
+.line2{
+    width:195.52px;
+    height: 184.52px;
+}
